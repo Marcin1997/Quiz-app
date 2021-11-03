@@ -1,0 +1,125 @@
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+:root {
+  --ff-primary: 'Spartan', sans-seriff;
+  --ff-secondary: "Source Code Pro", monospace;
+  --ff-teritary: 'Baloo Da 2', sans-seriff;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-bg: #1c1d25;
+  --clr-secondary: #0cdfd4;
+  --clr-primary: #eeeeee;
+  --clr-teritary: #295a99;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0, 0.25), 
+  0.125em 0.125em 0;
+}
+
+body {
+background-color: var(--clr-bg) !important;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Poppins', sans-serif;
+}
+
+.quiz-container {
+    background-color: var(--clr-primary);
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0, 0.1);
+    max-width: 100%;
+    overflow: hidden;
+    border: 5px solid var(--clr-secondary);
+}
+
+.quiz-header {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+h2 {
+    width: 100%;
+   margin: auto;
+   font-size:20px; 
+    width: max-content;
+    font-family: var(--ff-secondary);
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+    font-family: var(--ff-secondary);
+
+}
+
+button {
+    background-color: #9921e8;
+    background: linear-gradient(to right, var(--clr-secondary), #5b9996);
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 1.3rem;
+    color: white;
+    font-family: var(--ff-secondary);
+    font-size: 20px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #8a43b9;
+    background: linear-gradient(to right, var(--clr-secondary), #01cac0);
+}
+
+
+
+
+.quiz-container h1 {
+    padding: 100px 50px;
+    background-color: #fff;
+    height: 60%;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
